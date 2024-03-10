@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-export default function App() {
+export default function Counter({ nama }) {
   const [number, setNumber] = useState(0);
 
   const countNumber = (counter) => {
@@ -11,6 +11,7 @@ export default function App() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Counter</h1>
+      <h2>{nama}</h2>
       <div style={{ display: "flex", alignItem: "center" }}>
         <button
           type="button"
