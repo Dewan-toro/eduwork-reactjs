@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class NewsPortal extends Component {
+class NewsPortalCC extends Component {
   state = {
     articles: [],
     searchTerm: "",
@@ -36,7 +36,9 @@ class NewsPortal extends Component {
 
     return (
       <div className="container mt-5">
-        <h1 className="mb-4 text-center text-primary">Portal Berita</h1>
+        <h1 className="mb-4 text-center text-primary">
+          Portal Berita Class Component
+        </h1>
         <form onSubmit={this.handleSubmit} className="mb-4">
           <div className="input-group">
             <input
@@ -81,4 +83,4 @@ class NewsPortal extends Component {
   }
 }
 
-export default NewsPortal;
+export default NewsPortalCC;
