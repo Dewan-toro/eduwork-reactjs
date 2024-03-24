@@ -3,6 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import FormValidation from "./03_Form_Validation";
 import NavbarComponent from "./02_Tugas_Styling_Component/navbar";
+import NewsPortal from "./04_Lifecycle_Components";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       {/* <StylingComponent /> */}
       <NavbarComponent />
       <FormValidation />
+      <NewsPortal />
     </>
   );
 }
