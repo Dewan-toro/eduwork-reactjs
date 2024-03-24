@@ -34,7 +34,7 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
         <Button variant="primary rounded-pill" type="submit">
-          Login
+          Register
         </Button>
       </Container>
     </Navbar>
