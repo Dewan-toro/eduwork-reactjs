@@ -1,13 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
+import App from "./App.js";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NewsPortalCC from "./04_Lifecycle_Components/index.jsx";
+import NewsPortalFC from "./05_Hook/index.jsx";
+import FormValidation from "./03_Form_Validation/index.jsx";
+import StylingComponent from "./02_Styling_Component/index.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/home" element={<StylingComponent />} />
+          <Route path="/portal-berita-cc" element={<NewsPortalCC />} />
+          <Route path="/portal-berita-fc" element={<NewsPortalFC />} />
+          <Route path="/sign-up" element={<FormValidation />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
