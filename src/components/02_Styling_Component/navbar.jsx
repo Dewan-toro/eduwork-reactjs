@@ -25,6 +25,9 @@ function NavbarComponent() {
               <Link to="/portal-berita-fc" className="nav-link">
                 Portal Berita FC
               </Link>
+              <Link to="/redux" className="nav-link">
+                Redux
+              </Link>
               <NavDropdown title="Learning" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Private Class

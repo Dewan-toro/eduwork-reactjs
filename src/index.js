@@ -4,10 +4,11 @@ import "./index.css";
 import App from "./App.js";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NewsPortalCC from "./04_Lifecycle_Components/index.jsx";
-import NewsPortalFC from "./05_Hook/index.jsx";
-import FormValidation from "./03_Form_Validation/index.jsx";
-import StylingComponent from "./02_Styling_Component/index.jsx";
+import NewsPortalCC from "./components/04_Lifecycle_Components/index.jsx";
+import NewsPortalFC from "./components/05_Hook/index.jsx";
+import FormValidation from "./components/03_Form_Validation/index.jsx";
+import StylingComponent from "./components/02_Styling_Component/index.jsx";
+import Redux from "./components/06_Redux/index.jsx"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,7 @@ root.render(
           <Route path="/portal-berita-cc" element={<NewsPortalCC />} />
           <Route path="/portal-berita-fc" element={<NewsPortalFC />} />
           <Route path="/sign-up" element={<FormValidation />} />
+          <Route path="/redux" element={<Redux />} />
         </Route>
       </Routes>
     </BrowserRouter>
